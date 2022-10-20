@@ -1,0 +1,167 @@
+/*
+	
+	+-------------------------------------------------------------------+
+	|	master.css														|
+	|	Part of CSS template for FileMaker								|
+	|	General styles 													|
+	|																	|
+	|	Created by Wouter Samyn on 2012-06-11.							|
+	|	Copyright (c) 2012 Well Communications. All rights reserved.	|
+	+-------------------------------------------------------------------+
+	
+	
+	COPY-PASTE VARIABLES
+	--------------------
+	text grey		3e3e3e
+	border grey		b5b5b5
+	key blue		087188
+	
+*/
+
+
+html{ margin:0px; padding:0px; height:100%; }
+body{ margin:0px; padding:0px; height:100%; font-family:Arial, sans-serif; font-size:12px; color:#3e3e3e; line-height:15px;}
+img{ border:none; }
+
+/*
+	+-------------------------------------------------------------------------------------------+
+	|										STRUCTURE											|
+	+-------------------------------------------------------------------------------------------+	
+*/
+
+div#wrapper { width:950px; margin:auto; }
+
+div.sidebar { width:135px; float:left; }
+div.main { width:790px; float:right; }
+
+/*		###		HEADER		###		*/
+div#header { padding-top:50px; margin-bottom:60px; }
+
+
+
+/*		###		NAVIGATION		###		*/
+div#nav { border-bottom:1px solid #333333; height:34px; margin-bottom:20px; }
+div#nav ul { list-style-type:none; }
+div#nav ul li { float:left; height:25px; padding:8px 10px 0px 10px; background-color:#fafafb; border:1px solid #b5b5b5; border-bottom:1px solid #333333;font-family:'Georgia', serif; color:#3e3e3e; font-size:14px;  }
+div#nav ul li.active { border-bottom:1px solid #FFFFFF; background-color:#FFFFFF; }
+div#nav ul li a { text-decoration:none; font-family:'Georgia', serif; color:#3e3e3e; font-size:14px; }
+div#nav ul li.active a { color:#087188; }
+div#nav ul li:hover a { color:#087188; }
+div#nav ul li#btnLogout { float:right; }
+
+
+
+/*		###		FOOTER		###		*/
+div#footer { margin-top:30px; height:70px; border-top: 1px solid #b5b5b5; background:transparent url('../img/footer_bg.png') center top no-repeat; }
+
+
+
+/*
+	+-------------------------------------------------------------------------------------------+
+	|											GENERAL											|
+	+-------------------------------------------------------------------------------------------+	
+*/
+
+h1 { font-family:'Georgia', serif; font-size:20px; margin-top:10px;}
+h2 { font-family:'Georgia', serif; font-size:16px; color:#087188; margin-bottom:10px; }
+
+strong { color:#087188; }
+
+a { color:#087188; text-decoration:none; }
+
+input { border:1px solid #b7b7b7; padding:3px; width:228px; margin-bottom:3px; }
+input.check { padding:0px; margin-right:10px; width:auto; }
+input.euro { background:transparent url('../img/euro_bg.png') 4px center no-repeat; padding-left:15px; width:216px; }
+input.date { background:transparent url('../img/icons/date.png') right center no-repeat; }
+textarea { width:480px; height:200px; resize:none; border:1px solid #b7b7b7; padding:3px; font-family:Arial, sans-serif; font-size:12px; }
+select { width:236px; margin-right:2px; }
+button { width:236px; background: transparent url('../img/btn_bg.png') left top no-repeat; border:none; min-height:30px; color:#FFFFFF; font-family:'Georgia', sans-serif; font-size:14px; text-align:left; padding-left:15px; cursor:hand; cursor:pointer; }
+button.mini { width:auto; background:transparent; background-image:none; border:none; padding:0px; margin:0px; padding-left:2px; }
+a.button { display:inline-block; text-decoration:none; width:236px; background: transparent url('../img/btn_bg.png') left top no-repeat; border:none; min-height:30px; color:#FFFFFF; font-family:'Georgia', sans-serif; font-size:14px; text-align:left; padding-top:6px; padding-left:15px; cursor:hand; cursor:pointer; }
+img.icon_error { margin-left:15px; }
+
+p.infoLabel{ background: transparent url('../img/icons/information.png') no-repeat left 2px; padding-left:20px; }
+p.errorLabel{ background: transparent url('../img/icons/error.png') no-repeat left top; padding-left:25px; }
+
+
+div.sidebar ul { list-style-type:none; }
+div.sidebar ul li { height:48px; background:transparent url('../img/subnav_bg.png') right center no-repeat; margin:3px 0px; }
+div.sidebar ul li a { font-family:'Georgia', serif; font-size:14px; text-decoration:none; color:#3e3e3e; display:block; width:100%; height:100%; line-height:48px; }
+div.sidebar ul li a:hover { color:#087188; }
+div.sidebar ul li.active a { color:#087188; }
+
+div#titles { height:60px; background:transparent url('../img/footer_bg.png') center bottom no-repeat; }
+div#page { padding-top:20px; }
+
+td { vertical-align:top; padding:5px 3px; }
+td img.icon { position:relative; top:3px; }
+
+table.details { margin-bottom:10px; }
+p.details { margin-bottom:30px; }
+p.req { font-style:italic; font-size:10px; color:#087188; margin:10px 0; }
+span.req { font-weight:bold; font-size:16px; color:#087188; margin-left:5px; }
+
+
+div.feedback { border:1px solid #b5b5b5; padding:15px; margin-bottom:40px; display:none; margin-right:10px; }
+div.feedback.error { background:transparent url('../img/icons/exclamation.png') 15px 15px no-repeat; padding-left:40px; }
+div.feedback.success { background:transparent url('../img/icons/accept.png') 15px 15px no-repeat; padding-left:40px; }
+
+
+
+/* ========= */
+/* = LOGIN = */
+/* ========= */
+form#frmLogin { background:transparent url('../img/login_form_bg.png') left top no-repeat; width:653px; height:295px; margin:auto; padding:25px 0px 0px 10px; }
+form#frmLogin label { width:100px; text-align:right; float:left; margin-right:25px; }
+form#frmLogin p { width:380px; margin:auto; margin-top:70px; }
+
+form#frmLogin div.feedback { width:295px; margin:auto; padding:5px 10px 5px 35px; background-position:10px center; }
+form#frmLogin div.feedback p { margin:0px; }
+
+
+/* ============ */
+/* = OVERVIEW = */
+/* ============ */
+
+table.skinned { width:100%; }
+table.skinned tr:hover { background-color:#F7F7F7; }
+table.skinned th { font-family:'Georgia', serif; font-size:14px; border-bottom:1px solid #000000; padding-bottom:10px; }
+table.skinned tr:hover th { background-color:#FFFFFF; }
+table.skinned th span { font-size:0.8em; }
+table.skinned td { padding:8px 3px 3px 3px; border-bottom:1px solid #b5b5b5;  }
+
+table tr.addons td { padding-top:0px; padding-bottom:0px; }
+table tr.totaal td { font-weight:bold; border-top:1px solid #000000; }
+table tr td.info { width:50px; text-align:right; }
+table tr td.info img { cursor:hand; cursor:pointer; }
+
+table tr.logins td { padding:0px; }
+table tr.logins input { width:90%; margin:4px 3px 5px 3px }
+table tr.logins select { width:100px;  margin:4px 3px 5px 3px; }
+
+table tr.warn { background-color:#fff3f4; }
+table tr.warn:hover { background-color:#FEEBED; }
+table tr.warn td img { vertical-align:middle; margin-bottom:2px; margin-right:3px; }
+table tr.warn td span.late { font-weight:bold; color:#B90000; }
+
+table tr#editDummy { display:none; }
+
+/* ======== */
+/* = FORM = */
+/* ======== */
+input.relDescription { font-style:italic; color:#BFBFBF; }
+.ui-widget-header { border:none; background: transparent url('../css/ui-lightness/images/ui-bg_gloss-wave_35_blue_500x100.png') 50% 50% repeat-x; color: #ffffff; font-weight: bold; }
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus { border: 1px solid #087188; background:none; background-color: #CFE2E9; font-weight: bold; color: #087188; }
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {border: 1px solid #087188; background:none; background-color: #A9D3E4; color: #363636; }
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight { border:1px solid #CCC; background: #ffffff; font-weight: bold; color: #087188; }
+
+
+/* ========== */
+/* = SEARCH = */
+/* ========== */
+
+table#dummyTable { display:none; }
+table#dummyTable tr td { vertical-align:middle; }
+div#frmSearch { display:none; }
+select.operator { width:50px; }
+ul.searchList { padding-left:20px; }
